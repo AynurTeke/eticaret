@@ -1,0 +1,89 @@
+﻿@model e_ticaret.Models.Product
+
+@{
+	ViewData["Title"] = "Edit";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	int imageCount = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\wwwroot\\Image\\", Model.ProductId.ToString() + "-*").Length;
+}
+<script>
+
+	function changeImage(buttonNumber) {
+		var imageButton = document.getElementById("file-" + buttonNumber);
+		imageButton.click();
+	}
+
+	function changed(imageFile, imageNumber) {
+		var productImage = document.getElementById("img-" + imageNumber);
+		productImage.src = URL.createObjectURL(imageFile);
+	}
+
+</script>
+
+<h1>Edit</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+	<div class="col-md-4">
+		<form asp-action="Edit" enctype="multipart/form-data">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<input type="hidden" asp-for="ProductId" />
+			<input type="hidden" asp-for="SellerId" />
+			<input type="hidden" asp-for="ProductRate" />
+			<div class="form-group">
+				<label asp-for="ProductName" class="control-label"></label>
+				<input asp-for="ProductName" class="form-control" />
+				<span asp-validation-for="ProductName" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="ProductPrice" class="control-label"></label>
+				<input asp-for="ProductPrice" class="form-control" />
+				<span asp-validation-for="ProductPrice" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Description" class="control-label"></label>
+				<input asp-for="Description" class="form-control" />
+				<span asp-validation-for="Description" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="CategoryId" class="control-label"></label>
+				<select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+				<span asp-validation-for="CategoryId" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="BrandId" class="control-label"></label>
+				<select asp-for="BrandId" class="form-control" asp-items="ViewBag.BrandId"></select>
+				<span asp-validation-for="BrandId" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Image" class="control-label"></label>
+				@for (int i = 0; i < 5; i++)
+				{
+					string imagePath = "/Image/" + Model.ProductId.ToString() + "-" + i.ToString() + ".jpg";
+					<img id="img-@i" onclick="changeImage(@i)" src="@imagePath"  />
+
+				}
+			</div>
+			<div style="display:none;">
+				@for (int i = 0; i < 5; i++)
+				{
+					<input type="file" id="file-@i" name="file-@i" onchange="changed(this.files[0],@i)" />
+				}
+			</div>
+
+			<div class="form-group">
+				<input type="submit" value="Save" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<div>
+	<a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+	}

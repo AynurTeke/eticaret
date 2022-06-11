@@ -1,0 +1,60 @@
+﻿@model IEnumerable<e_ticaret.Models.Seller>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SellerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SellerEMail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SellerDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SellerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SellerEMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SellerDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City.CityName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SellerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SellerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SellerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

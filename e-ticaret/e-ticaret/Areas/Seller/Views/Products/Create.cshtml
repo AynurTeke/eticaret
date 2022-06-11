@@ -1,0 +1,147 @@
+﻿@model e_ticaret.Models.Product
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<script>
+    function addImage(buttonNumber) {
+        var imageButton = document.getElementById("file-" + buttonNumber);
+
+        imageButton.click();
+
+    }
+    function changed(buttonId)
+    {
+        var fileButton = document.getElementById(buttonId);
+        var imageNumber = buttonId.substring(5);
+        var productImage = document.getElementById("img-" + imageNumber);
+        var imageFiles = fileButton.files[0];
+        productImage.src = URL.createObjectURL(imageFiles);
+        var firstButton = document.getElementById("delete-" + imageNumber);
+        firstButton.style.display = "inline";
+        imageNumber++;
+        if (imageNumber < 5) {
+            var firstImage = document.getElementById("img-" + imageNumber);
+            firstImage.style.display = "inline";
+        }
+
+
+    }
+    function showFirstImage() {
+        var firstImage = document.getElementById("img-0");
+        firstImage.style.display = "inline";
+    }
+
+    function deleteImage(deleteId) {
+        var nextObject, currentObject, j, image3, parentDiv;
+
+        currentObject = document.getElementById("file-" + deleteId);
+        parentDiv = currentObject.parentElement;
+        parentDiv.removeChild(currentObject);
+        for (i = deleteId; i < 4; i++) {
+            j = i + 1;
+            currentObject = document.getElementById("img-" + i);
+            nextObject = document.getElementById("img-" + j);
+            currentObject.src = nextObject.src;
+            currentObject.style.display = nextObject.style.display;
+            currentObject = document.getElementById("delete-" + i);
+            nextObject = document.getElementById("delete-" + j);
+            currentObject.style.display = nextObject.style.display;
+            nextObject = document.getElementById("file-" + j);
+            nextObject.id = "file-" + i;
+            nextObject.name = nextObject.id;
+        }
+        currentObject = document.getElementById("delete-4");
+        currentObject.style.display = "none";
+        currentObject = document.getElementById("img-4");
+        currentObject.src = "/Image/arti.jpg";
+        image3 = document.getElementById("img-3");
+        if (image3.src == "http://localhost:5422/Image/arti.jpg")
+        {
+            currentObject.style.display = "none";
+        }
+        currentObject = document.createElement("input");
+        currentObject.type = "file";
+        currentObject.id = "file-4";
+        currentObject.name = "file-4";
+        currentObject.style.display = "none";
+        currentObject.onchange = function() { changed(this.id); };
+        parentDiv.appendChild(currentObject);
+    }
+    $(document).ready(showFirstImage);
+</script>
+<h1>Create</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="SellerId" class="form-control" type="hidden" value="@ViewData["SellerId"]" />
+
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductPrice" class="control-label"></label>
+                <input asp-for="ProductPrice" class="form-control" />
+                <span asp-validation-for="ProductPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label"></label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrandId" class="control-label"></label>
+                <select asp-for="BrandId" class="form-control" asp-items="ViewBag.BrandId"></select>
+            </div>
+
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsDeleted" /> @Html.DisplayNameFor(model => model.IsDeleted)
+                </label>
+            </div>
+
+            <div>
+                @for (byte i = 0; i < 5; i++)
+                {
+                    <img id="img-@i" onclick="addImage(@i)" src="/Image/arti.jpg" style="display:none;">
+                    <input type="button" onclick="deleteImage(@i)" value="Delete" id="delete-@i" style="display:none;">
+                    <input type="file" name="file-@i" id="file-@i" onchange="changed(this.id)" style="display:none;" />
+
+                }
+            </div>
+            @* <div class="form-group" style="" >
+            <label asp-for="Image" class="control-label"></label>
+            <input asp-for="Image" class="form-control" />
+            <span asp-validation-for="Image" class="text-danger"></span>
+
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

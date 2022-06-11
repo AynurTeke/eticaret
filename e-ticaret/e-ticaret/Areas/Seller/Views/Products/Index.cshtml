@@ -1,0 +1,50 @@
+﻿@model IEnumerable<e_ticaret.Models.Product>
+
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	string imagePath;
+}
+
+<h1>Index</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.ProductName)
+
+				@Html.DisplayNameFor(model => model.ProductPrice)
+
+				@Html.DisplayNameFor(model => model.Description)
+
+				@Html.DisplayNameFor(model => model.ProductRate)
+
+				@Html.DisplayNameFor(model => model.Category)
+
+				@Html.DisplayNameFor(model => model.Brand)
+
+				@Html.DisplayNameFor(model => model.Image)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			imagePath = "/Image/" + item.ProductId.ToString() + "-0.jpg";
+			<tr>
+				<td>
+					<a asp-action="Details" asp-route-id="@item.ProductId">
+						@Html.DisplayFor(modelItem => item.ProductName)
+						@Html.DisplayFor(modelItem => item.ProductPrice) TL
+						@Html.DisplayFor(modelItem => item.Description)
+						@Html.DisplayFor(modelItem => item.ProductRate)
+						@Html.DisplayFor(modelItem => item.Category.CategoryName)
+						@Html.DisplayFor(modelItem => item.Brand.BrandName)
+						<img src="@imagePath"/>
+					</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

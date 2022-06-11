@@ -1,0 +1,120 @@
+﻿@model IEnumerable<e_ticaret.Areas.Admin.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserEMail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ViewUsers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeleteUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ViewSellers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateSeller)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeleteSeller)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditSeller)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ViewCategories)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeleteCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeleteProduct)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EditProduct)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserEMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ViewUsers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeleteUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EditUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ViewSellers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateSeller)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeleteSeller)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EditSeller)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ViewCategories)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeleteCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EditCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeleteProduct)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EditProduct)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UserId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.UserId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

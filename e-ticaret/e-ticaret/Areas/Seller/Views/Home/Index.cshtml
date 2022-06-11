@@ -1,0 +1,32 @@
+﻿@model e_ticaret.Models.Seller
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SellerEMail" class="control-label"></label>
+                <input asp-for="SellerEMail" class="form-control" />
+                <span asp-validation-for="SellerEMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SellerPassword" class="control-label"></label>
+                <input asp-for="SellerPassword" class="form-control" />
+                <span asp-validation-for="SellerPassword" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

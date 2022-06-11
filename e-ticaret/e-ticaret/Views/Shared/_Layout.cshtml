@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - e_ticaret</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/e_ticaret.styles.css" asp-append-version="true" />
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script>
+		function getCookie() {
+			let name = "cart=";
+			let decodedCookie = decodeURIComponent(document.cookie);
+
+			let ca = decodedCookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+
+		function SetCartCount() {
+			let cartTotal = document.getElementById("cartCount");
+			let cartCookie = getCookie();
+			var cartItems = cartCookie.split(',');
+			var totalCount = 0;
+			if (cartCookie != "") {
+				for (let i = 0; i < cartItems.length; i++) {
+					let cartItem = cartItems[i];
+					let itemDetails = cartItem.split(':');
+					totalCount = totalCount + parseInt(itemDetails[1]);
+				}
+			}
+
+			cartTotal.innerText = totalCount;
+		}
+		$(document).ready(SetCartCount);
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+			<div class="container-fluid">
+				<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">e_ticaret</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+					<ul class="navbar-nav flex-grow-1">
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Admin" asp-controller="Sellers" asp-action="Index">Seller</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Seller" asp-controller="Home" asp-action="Login">Seller LogIn</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Admin" asp-controller="PaymentMethods" asp-action="Index">Payment LogIn</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Admin" asp-controller="ItemStatus" asp-action="Index">Item LogIn</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav">
+						<li class="nav-item nav-link">
+							<a asp-action="Index" asp-controller="Cart">Sepet:<span id="cartCount"></span></a>
+						</li>
+						<li class="nav-item nav-link">
+							@{
+								string? customerId = this.Context.Session.GetString("customer");
+								if (customerId == null)
+								{
+									<a href="/Customers/LogIn?currentUrl=@this.Url.PageLink()">Giriş Yap</a>
+								}
+							}
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; 2022 - e_ticaret - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+		</div>
+	</footer>
+
+
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

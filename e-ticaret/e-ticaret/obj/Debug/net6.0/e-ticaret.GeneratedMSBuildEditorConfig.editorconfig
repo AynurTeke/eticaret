@@ -1,0 +1,288 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = e_ticaret
+build_property.RootNamespace = e_ticaret
+build_property.ProjectDir = C:\Users\cimbo\OneDrive\Masaüstü\KURS ÇALIŞMALAR\e-ticaret\e-ticaret\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\cimbo\OneDrive\Masaüstü\KURS ÇALIŞMALAR\e-ticaret\e-ticaret
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/ItemStatus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVN0YXR1c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/ItemStatus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVN0YXR1c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/ItemStatus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVN0YXR1c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/ItemStatus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVN0YXR1c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/ItemStatus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSXRlbVN0YXR1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/PaymentMethods/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5bWVudE1ldGhvZHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/PaymentMethods/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5bWVudE1ldGhvZHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/PaymentMethods/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5bWVudE1ldGhvZHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/PaymentMethods/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5bWVudE1ldGhvZHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/PaymentMethods/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5bWVudE1ldGhvZHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Sellers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VsbGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Sellers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VsbGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Sellers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VsbGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Sellers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VsbGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Sellers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VsbGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Admin/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Brands/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXEJyYW5kc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Brands/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXEJyYW5kc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Brands/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXEJyYW5kc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Brands/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXEJyYW5kc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Brands/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXEJyYW5kc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXFByb2R1Y3RzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXFByb2R1Y3RzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXFByb2R1Y3RzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXFByb2R1Y3RzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/Seller/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2VsbGVyXFZpZXdzXFByb2R1Y3RzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Areas/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Customers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Customers/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXExvZ0luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Home/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/BTC.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQlRDLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQ2hlY2tPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/CreditCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQ3JlZGl0Q2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/Decision.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGVjaXNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/EFT.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRUZULmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/MakePayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcTWFrZVBheW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Payments/None.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcTm9uZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cimbo/OneDrive/Masaüstü/KURS ÇALIŞMALAR/e-ticaret/e-ticaret/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8lz49dkbie

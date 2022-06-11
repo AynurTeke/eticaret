@@ -1,0 +1,77 @@
+﻿@model e_ticaret.Models.Product
+
+@{
+	ViewData["Title"] = "Details";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	int imageCount = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\wwwroot\\Image\\", Model.ProductId.ToString() + "-*").Length;
+}
+<script>
+	function addCart(productId) {
+		$("#cartCount").load("@Url.Action("Add","Cart")/" + productId);
+	}
+</script>
+
+<h1>Ürün Detayları</h1>
+
+<div>
+	<h4>Ürün</h4>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.ProductName)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.ProductName)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.ProductPrice)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.ProductPrice) TL
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Description)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Description)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.ProductRate)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.ProductRate)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Seller)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Seller.Phone)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Category)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Category.CategoryName)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Brand)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Brand.BrandName)
+		</dd>
+		<dd class="col-sm-10">
+			@for (int i = 0; i < imageCount; i++)
+			{
+				string imagePath = "/Image/" + Model.ProductId.ToString() + "-" + i.ToString() + ".jpg";
+				<img src="@imagePath" />
+
+			}
+		</dd>
+	</dl>
+</div>
+<div>
+	<button  onclick="addCart('@Model.ProductId')">Sepete Ekle</button>
+</div>
+<div>
+	<a asp-action="Index">Back to List</a>
+</div>

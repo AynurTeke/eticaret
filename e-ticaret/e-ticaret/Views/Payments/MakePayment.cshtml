@@ -1,0 +1,27 @@
+﻿@model IEnumerable<e_ticaret.Models.PaymentMethod>
+
+<script>
+function LoadPaymentMethod(methodId){
+	$("#paymentDiv").load("/Payments/Method/" + methodId)
+
+
+
+}
+
+</script>
+
+<select onchange="LoadPaymentMethod(this.value)">
+	<option value="0">Ödeme Yöntemini Seçiniz</option>
+	@foreach (var item in Model)
+	{
+		
+		<option value="@item.PaymentMethodId">
+			<a>
+				@Html.DisplayFor(modelItem => item.PaymentMethodName)
+			</a>
+		</option>
+	}
+</select>
+<div id="paymentDiv">
+	
+</div>

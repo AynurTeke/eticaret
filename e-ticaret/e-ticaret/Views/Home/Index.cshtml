@@ -1,0 +1,32 @@
+﻿@model IEnumerable<e_ticaret.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string imagePath;
+}
+
+<h1>Ürünler</h1>
+
+<table class="table">
+
+    <tbody>
+@foreach (var item in Model) {
+    			imagePath = "/Image/" + item.ProductId.ToString() + "-0.jpg";
+        <tr>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.ProductId">
+                @Html.DisplayFor(modelItem => item.ProductName)
+                @Html.DisplayFor(modelItem => item.ProductPrice) TL
+                @Html.DisplayFor(modelItem => item.Description)
+                @Html.DisplayFor(modelItem => item.ProductRate)
+                @Html.DisplayFor(modelItem => item.Seller.Phone)
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+                @Html.DisplayFor(modelItem => item.Brand.BrandName)
+                 <img src="@imagePath"/>
+                </a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

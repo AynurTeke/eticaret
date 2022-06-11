@@ -1,0 +1,125 @@
+﻿@model e_ticaret.Areas.Admin.Models.User
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UserId" />
+            <input type="hidden" name="OriginalPassword" value="@Model.UserPassword" />
+            <div class="form-group">
+                <label asp-for="UserEMail" class="control-label"></label>
+                <input asp-for="UserEMail" class="form-control" />
+                <span asp-validation-for="UserEMail" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label for="OldPassword" class="control-label">Old Password</label>
+                <input type="Password" name="OldPassword"  class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="UserPassword" class="control-label"></label>
+                <input asp-for="UserPassword" class="form-control" value="" />
+                <span asp-validation-for="UserPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsDeleted" /> @Html.DisplayNameFor(model => model.IsDeleted)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ViewUsers" /> @Html.DisplayNameFor(model => model.ViewUsers)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="CreateUser" /> @Html.DisplayNameFor(model => model.CreateUser)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="DeleteUser" /> @Html.DisplayNameFor(model => model.DeleteUser)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="EditUser" /> @Html.DisplayNameFor(model => model.EditUser)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ViewSellers" /> @Html.DisplayNameFor(model => model.ViewSellers)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="CreateSeller" /> @Html.DisplayNameFor(model => model.CreateSeller)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="DeleteSeller" /> @Html.DisplayNameFor(model => model.DeleteSeller)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="EditSeller" /> @Html.DisplayNameFor(model => model.EditSeller)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ViewCategories" /> @Html.DisplayNameFor(model => model.ViewCategories)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="CreateCategory" /> @Html.DisplayNameFor(model => model.CreateCategory)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="DeleteCategory" /> @Html.DisplayNameFor(model => model.DeleteCategory)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="EditCategory" /> @Html.DisplayNameFor(model => model.EditCategory)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="DeleteProduct" /> @Html.DisplayNameFor(model => model.DeleteProduct)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="EditProduct" /> @Html.DisplayNameFor(model => model.EditProduct)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
